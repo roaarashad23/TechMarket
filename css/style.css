@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.orange-bg{
+    background-color: #FF4405;
+}
+.orange-bg-light{
+    background-color: #FF9160;
+}
+.orange-color{
+    color: #FF4405;
+}
+.orange-light{
+    color: #FF9160;
+}
+.darkbue-bg{
+    background-color: #494B8A;
+}
+.darkbue-lightbg{
+    background-color: #494B8A;
+}
+.darkblue-bgcolor{
+    background-color: #242655;
+}
+.graay-bg{
+    background-color: #F2F4F7;
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+    /*  aspect-ratio: 1 / 1; يحافظ على المربع */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+}
+
+
+.card-label {
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.to-be-red:hover{
+    color: red !important;
+}
+.btnn:hover{
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.15);
+}
+
+.stories{
+    background-image: url(../img/unsplash_EAvS-4KnGrk.png);
+    background-repeat:no-repeat;
+    background-size:cover
+
+}
+.text-shadow {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 991.98px) {
+    .hero-content {
+      position: relative !important;
+      top: auto !important;
+      right: auto !important;
+      transform: none !important;
+      max-width: 100% !important;
+    }
+}
